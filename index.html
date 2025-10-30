@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneEnterprize - Renewable Energy Solutions</title>
-    <link rel="stylesheet" href="./Assests/css/styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>OneEnterprise Solar Energy Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Assests/css/styles.css">
 </head>
 <body>
 
@@ -18,474 +19,565 @@
         </div>
         
         <nav class="nav-links">
+            <div id="closeMenu">
+                <i class="fas fa-times"></i> 
+            </div>
+            
             <a href="#">HOME</a>
             <a href="#about-us">ABOUT US</a>
             <a href="#services">SERVICES</a>
-            <a href="#">PROJECTS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#solar-calculator-section">CALCULATOR</a>
+            <a href="#faq-section">FAQ</a>
             <a href="#contact-us">CONTACT</a>
+            <a href="#contact-us" class="cta-header-button mobile-only-cta">GET A QUOTE</a>
         </nav>
         
-        <a href="#" class="cta-header-button desktop-cta">GET A QUOTE</a>
+        <a href="#contact-us" class="cta-header-button desktop-cta">GET A QUOTE</a>
         
         <div class="menu-toggle" id="menuToggle">
             <i class="fas fa-bars"></i>
         </div>
     </header>
 
-    <nav class="mobile-sidebar" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <div class="logo-container">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/200x50/1a1a1a/00bf75?text=OneEnterprize+Logo" alt="OneEnterprize Logo">
-                    </a>
-            </div>
-            <div class="close-button" id="closeButton">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <div class="mobile-links-wrapper">
-            <a href="#">HOME</a>
-            <a href="#about-us">ABOUT US</a>
-            <a href="#services">SERVICES</a>
-            <a href="#">PROJECTS</a>
-            <a href="#contact-us">CONTACT</a>
-            <a href="#" class="cta-mobile-button">GET A QUOTE</a>
-        </div>
-    </nav>
-    
-    <div class="menu-backdrop" id="menuBackdrop"></div>
-
     <div class="hero-section">
         <div class="slideshow">
-            <div class="slide active" data-tagline="Renewable Energy Solutions for a Brighter Future"></div>
-            <div class="slide" data-tagline="Harness the Power of Sustainable Resources Today"></div>
-            <div class="slide" data-tagline="25-Year Warranty. Predictable Payments. Simple Installation."></div>
+            <div class="slide active" data-tagline="OneEnterprises: Renewable Energy Solutions for a Brighter Future"></div>
+            <div class="slide" data-tagline="OneEnterprises: Harness the Power of Sustainable Resources Today"></div>
+            <div class="slide" data-tagline="OneEnterprises: 25-Year Warranty. Predictable Payments. Simple Installation."></div>
         </div>
         <div class="overlay"></div> 
         <div class="hero-content">
-            <h1 id="tagline-text" class="show">Renewable Energy Solutions for a Brighter Future</h1>
+            <h1 id="tagline-text" class="show">OneEnterprises: Renewable Energy Solutions for a Brighter Future</h1>
             <p>We drive the transition to more sustainable, reliable, and affordable energy systems. Our innovative technologies energize society and secure the future.</p>
-            <a href="#" class="cta-button">LEARN MORE</a>
+            <a href="#contact-us" class="cta-button">LEARN MORE</a>
         </div>
     </div>
     
     <div class="main-content-wrapper">
-        <section class="about-section" id="about-us">
-            <div class="about-container scroll-reveal">
-                <div class="about-image-column animate-left">
-                    <img src="https://t4.ftcdn.net/jpg/05/87/75/59/240_F_587755963_P2QBmOlq0AF2KL4D0XeoeXbjZKvLqO6Q.jpg" alt="Engineers inspecting solar panels and wind turbine">
+        
+        <section id="about-us" class="about-section">
+            
+            <div class="about-content-grid">
+                
+                <div class="about-text-column slide-in-left animate-on-scroll">
+                    <p class="section-tag">WHO IS ONEENTERPRISE</p> 
+                    <h2>We are the Best-In-Class Products & Solutions</h2>
                     
-                    <div class="experience-box">
-                        <span>25+</span>
-                        Years Of Experience
-                    </div>
-                </div>
-
-                <div class="about-content-column animate-right">
-                    <span class="section-tag"><i class="fas fa-leaf"></i> ABOUT US</span>
-                    <h2>We Are The Best In <br>Solar Energy Solutions</h2>
+                    <p>**OneEnterprise** is a leading solar-based energy company specializing in the design, installation, and maintenance of photovoltaic (PV) systems for residential, commercial, and industrial clients.</p>
                     
-                    <p class="highlight">In Recent Years, New Capacity Across The Solar Value Chain Has Become Necessary To Support The PV Market's Growth. However</p>
+                    <p>We offer and install all types of solar solutions, including rooftop installations, ground-mounted solar farms, and off-grid battery storage systems. Our commitment is to drive the transition to sustainable, reliable, and affordable energy, ensuring every project is delivered with the highest standards of quality and efficiency.</p>
                     
-                    <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing Facilities Is Considerable. Turpis Egestas Pretium Enen Pharetra Magna Ac Placerat Amet, Sit Amet Luctus Venenatis Lectus</p>
-                    
-                    <ul class="features-list">
-                        <li><i class="fas fa-check-circle"></i> Project Planning</li>
-                        <li><i class="fas fa-check-circle"></i> Best Energy Solutions</li>
-                        <li><i class="fas fa-check-circle"></i> Wind Generators</li>
-                        <li><i class="fas fa-check-circle"></i> Simple & Easy to Use</li>
-                    </ul>
-                    
-                    <a href="#" class="link-button">
-                        More About Us <i class="fas fa-long-arrow-alt-right"></i>
+                    <a href="#" class="download-brochure-cta">
+                        <div class="download-icon-wrapper">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        Download Brochure
                     </a>
                 </div>
+                
+                <div class="about-image-column slide-in-right animate-on-scroll">
+                    <img src="./Assests/Images/AboutUs.png" alt="Technician installing solar panels" class="about-main-image">
+                    
+                    <div class="capacity-box">
+                        <p class="capacity-value">45k</p>
+                        <p class="capacity-label">MEGAWATTS OF CAPACITY</p>
+                    </div>
+                </div>
             </div>
+
         </section>
         
-        <section class="benefits-section">
-            <span class="section-tag">OUR BENEFITS</span>
-            <h2>Main Reasons Why Choose Us</h2>
-
-            <div class="benefits-grid" id="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-map-marked-alt"></i></div>
-                    <h3>Pan-India Reach</h3>
-                    <p>Seamless project execution from Hyderabad to the farthest corners of the country.</p>
+        <section id="why-choose-us" class="choose-us-section">
+            
+            <div class="choose-us-content-grid">
+                
+                <div class="choose-us-image-grid animate-on-scroll slide-in-left">
+                    <div class="grid-item service-block orange-bg">
+                        <i class="fas fa-bolt grid-icon-large"></i> 
+                        <h3>Enhanced <br> Services</h3>
+                        <a href="#" class="grid-cta"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="grid-item image-block" style="background-image: url('https://madebydesignesia.com/themes/solaria/images/misc/s6.webp');"></div>
+                    <div class="grid-item image-block" style="background-image: url('https://madebydesignesia.com/themes/solaria/images/misc/p2.webp');"></div>
+                    <div class="grid-item service-block green-bg">
+                        <i class="fas fa-leaf grid-icon-large"></i> 
+                        <h3>Maintenance <br> Services</h3>
+                        <a href="#" class="grid-cta"><i class="fas fa-plus"></i></a>
+                    </div>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-hand-holding-usd"></i></div>
-                    <h3>Transparent Financing</h3>
-                    <p>Zero-cost EMIs, MNRE subsidies fully facilitated, and clear ROI projections.</p>
+                <div class="choose-us-text-column animate-on-scroll slide-in-right">
+                    <p class="section-tag">WHY CHOOSE US</p>
+                    <h2 class="choose-us-heading">We are Building a Sustainable Future</h2>
+                    
+                    <ul class="why-choose-list">
+                        <li>
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h3>Best Energy Solutions</h3>
+                                <p>Over two decades of rich experience in the renewable energy sector and over 45k MW capacity installed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h3>End-To-End Services</h3>
+                                <p>Vast experience in project development, land pro-curement, liaisoning and working with regulatory bodies.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h3>Global Expertise</h3>
+                                <p>A perfect blend of global experience and local expertise to further our focus on technology advancement.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="services-header animate-on-scroll">
+                <p class="section-tag">ONEENTERPRISE SOLAR ENERGY SERVICES</p>
+                <h2>Reliable, Renewable, and <br> Cost-Effective Energy</h2>
+                <p class="services-subtitle">**OneEnterprise** provides cutting-edge solar solutions tailored for efficiency, reliability, and long-term cost savings for both residential and commercial projects.</p>
+            </div>
+
+            <div class="services-grid">
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-tools"></i></div>
-                    <h3>End-to-End Support</h3>
-                    <p>Design → Installation → 24×7 monitoring → Annual maintenance—your system is in expert hands, every step of the way.</p>
+                <div class="initial-cards">
+                    <div class="service-card animate-on-scroll" style="background-image: url('./Assests/Images/Solar\ Panel\ Installation.png');">
+                        <div class="card-content">
+                            <h3>Solar Panel Installation</h3>
+                            <p class="hover-tagline">Fast, certified installation by experienced OneEnterprise technicians, ensuring optimal placement and performance.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="background-image: url('./Assests/Images/Solar\ Panel\ \ maintenance.png');">
+                        <div class="card-content">
+                            <h3>Solar Panel Maintenance</h3>
+                            <p class="hover-tagline">Ensure peak performance with proactive cleaning, diagnostics, and preventative repair services.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="background-image: url('./Assests/Images/Custom\ System\ Design.png');">
+                        <div class="card-content">
+                            <h3>Custom System Design</h3>
+                            <p class="hover-tagline">Tailored solar setups using advanced software to maximize energy generation for your unique property.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-tachometer-alt"></i></div>
-                    <h3>Advanced Monitoring</h3>
-                    <p>Our IoT-enabled performance dashboards deliver real-time system insights, while automated alerts and predictive diagnostics ensure any issue is addressed before it impacts your energy output.</p>
+                <div class="hidden-cards">
+                    <div class="service-card hidden" style="background-image: url('./Assests/Images/Battery.png');">
+                        <div class="card-content">
+                            <h3>Battery Storage Solutions</h3>
+                            <p class="hover-tagline">Integrate cutting-edge battery technology to store energy and maintain power during grid outages.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class="service-card hidden" style="background-image: url('./Assests/Images/monitoring.png');">
+                        <div class="card-content">
+                            <h3>System Monitoring & Reporting</h3>
+                            <p class="hover-tagline">Real-time monitoring and detailed reports ensuring system health and efficiency 24/7.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
+
+                    <div class="service-card hidden" style="background-image: url('./Assests/Images/Solar\ Pannel\ Upgrades.png');">
+                        <div class="card-content">
+                            <h3>Solar Panel Upgrades</h3>
+                            <p class="hover-tagline">Upgrade to the latest high-efficiency solar panels and inverters to boost energy output.</p>
+                        </div>
+                        <a href="#" class="card-arrow"><i class="fas fa-arrow-up"></i></a>
+                    </div>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>Tailored System Design</h3>
-                    <p>We conduct detailed on-site energy audits and simulations to craft a bespoke solar solution—optimizing panel orientation, capacity, and mounting to match your consumption patterns and roof characteristics.</p>
-                </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon"><i class="fas fa-home"></i></div>
-                    <h3>Home Appliance</h3>
-                    <p>Solar panels can affect the value of your home. Several studies show that solar installation increases property appeal and long-term savings.</p>
-                </div>
             </div>
             
-            <button class="load-more-btn" id="load-more-benefits">
-                LOAD MORE BENEFITS
-            </button>
-            
+            <div class="services-footer">
+                <button id="viewServicesBtn" class="cta-button services-cta animate-on-scroll">VIEW ALL SERVICES</button>
+            </div>
+
         </section>
         
-        <section class="cta-banner-section">
-            <div class="cta-banner-content">
-                <h2>Got an Incredible Project Right Now?</h2>
-                <p>This helps ensure quality, schedule and that we're all working toward same goal</p>
-            </div>
-            <a href="#" class="cta-banner-button">APPLY NOW</a>
-        </section>
-
-        <section class="process-section">
-            <span class="section-tag">HOW WE WORK</span>
-            <h2>Our Project Work Flow Process</h2>
-
-            <div class="process-steps-container scroll-reveal-workflow">
+        <section id="contact-bar" class="contact-bar-section">
+            <div class="contact-bar-grid">
                 
-                <div class="process-step" data-delay="0">
-                    <div class="process-image-wrapper">
-                        <img src="https://t4.ftcdn.net/jpg/05/87/75/59/240_F_587755963_P2QBmOlq0AF2KL4D0XeoeXbjZKvLqO6Q.jpg" alt="Consultation Icon">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-info">
+                        <h4>Need Our Services?</h4>
+                        <p>Call: +1 800 987 654</p>
                     </div>
-                    <h3>Book a Free Consultation</h3>
-                    <p>Industrial engineering is a branch of engineering which focuses on the optimization of complex systems or processes.</p>
                 </div>
 
-                <div class="process-step" data-delay="200">
-                    <div class="process-image-wrapper">
-                        <img src="https://t3.ftcdn.net/jpg/05/87/75/60/240_F_587756024_BMhPtTtbEFjL4oThtVTC5L38eJDQ6oqt.jpg" alt="Review Icon">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <div class="contact-info">
+                        <h4>Work Hours</h4>
+                        <p>Mon to Sat 08:00 - 17:00</p>
                     </div>
-                    <h3>Review Proposal</h3>
-                    <p>Industrial engineering is a branch of engineering which focuses on the optimization of complex systems or processes.</p>
-                </div>
-                
-                <div class="process-step" data-delay="400">
-                    <div class="process-image-wrapper">
-                        <img src="https://t3.ftcdn.net/jpg/07/50/06/14/240_F_750061430_QzErwPVFLPUqTO8YHE0rO10DVQhaqZH0.jpg" alt="Installation Icon">
-                    </div>
-                    <h3>Track Project Installation</h3>
-                    <p>Industrial engineering is a branch of engineering which focuses on the optimization of complex systems or processes.</p>
                 </div>
 
-                <div class="process-step" data-delay="600">
-                    <div class="process-image-wrapper">
-                        <img src="https://t3.ftcdn.net/jpg/05/68/13/46/240_F_568134610_Ta2yhiHNP5R0JaWXvBn7rVRjEp2ZlKMP.jpg" alt="Completion Icon">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info">
+                        <h4>Email Us</h4>
+                        <p>support@oneenterprise.com</p>
                     </div>
-                    <h3>Make it Happen</h3>
-                    <p>Industrial engineering is a branch of engineering which focuses on the optimization of complex systems or processes.</p>
                 </div>
-                
+
             </div>
         </section>
-        
-        <section class="services-section" id="services">
-            <span class="section-tag">OUR EXPERTISE</span>
-            <h2>What We Offer</h2>
+
+        <section id="installation-process" class="installation-process-section">
+            <div class="installation-header animate-on-scroll">
+                <p class="section-tag">ONEENTERPRISE PROCESS</p>
+                <h2>Installation Process</h2>
+            </div>
+            <div class="process-grid">
+                
+                <div class="process-step animate-on-scroll slide-in-left" style="animation-delay: 0s;">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>Site Evaluation & Design</h3>
+                    <p>We assess your roof structure and energy usage, then create a custom solar system tailored to your needs.</p>
+                </div>
+                <div class="process-arrow animate-on-scroll hidden md:flex" style="animation-delay: 0.1s;"><i class="fas fa-arrow-right"></i></div>
+                
+                <div class="process-step animate-on-scroll slide-in-left" style="animation-delay: 0.2s;">
+                    <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Permitting & Approvals</h3>
+                    <p>Our team manages all necessary paperwork, including local permits and utility approvals.</p>
+                </div>
+                <div class="process-arrow animate-on-scroll hidden md:flex" style="animation-delay: 0.3s;"><i class="fas fa-arrow-right"></i></div>
+                
+                <div class="process-step animate-on-scroll slide-in-right" style="animation-delay: 0.4s;">
+                    <div class="step-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Professional Installation</h3>
+                    <p>We install high-quality solar panels, inverters, and safety components with precision and care.</p>
+                </div>
+                <div class="process-arrow animate-on-scroll hidden md:flex" style="animation-delay: 0.5s;"><i class="fas fa-arrow-right"></i></div>
+                
+                <div class="process-step animate-on-scroll slide-in-right" style="animation-delay: 0.6s;">
+                    <div class="step-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Inspection & Activation</h3>
+                    <p>After final inspection and grid approval, your system goes live—ready to power your home or business.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="projects-header animate-on-scroll">
+                <p class="section-tag">ONEENTERPRISE PROJECTS</p>
+                <h2>Powering a Brighter Future <br> with <span class="light-text-style">Clean Energy</span></h2>
+                <p class="projects-subtitle">Explore our latest solar installations—from residential rooftops to commercial systems—each designed for maximum efficiency and sustainability.</p>
+            </div>
+
+            <div class="projects-slider-container animate-on-scroll">
+                <div class="slider-arrow prev-arrow" id="prevProject" aria-label="Previous Project"><i class="fas fa-chevron-left"></i></div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    
+                    <div class="project-card" style="background-image: url('./Assests/Images/BrightHome\ Energy.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>BrightHome Energy</h4>
+                        </a>
+                    </div>
+
+                    <div class="project-card" style="background-image: url('./Assests/Images/GreenMart\ SuperMarket.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>GreenMart Supermarket</h4>
+                        </a>
+                    </div>
+
+                    <div class="project-card" style="background-image: url('./Assests/Images/EcoSchool\ Initiative.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>EcoSchool Initiative</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="project-card" style="background-image: url('./Assests/Images/UrbanSolar\ 360.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>UrbanSolar 360</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="project-card" style="background-image: url('./Assests/Images/Solaria\ Cares.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>Solaria Cares</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="project-card" style="background-image: url('./Assests/Images/Innovation\ Hub.png');">
+                        <a href="#" class="card-overlay">
+                            <i class="fas fa-arrow-up card-link-icon"></i>
+                            <h4>Innovation Hub</h4>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="slider-arrow next-arrow" id="nextProject" aria-label="Next Project"><i class="fas fa-chevron-right"></i></div>
+            </div>
             
-            <div class="carousel-nav-container">
-                <button class="carousel-arrow" id="prev-service-btn"><i class="fas fa-angle-left"></i></button>
-                <button class="carousel-arrow" id="next-service-btn"><i class="fas fa-angle-right"></i></button>
+        </section>
+
+        <section id="solar-calculator-section" class="solar-calculator-section">
+            <div class="calculator-wrapper animate-on-scroll">
+                
+                <div class="input-controls-column">
+                    <div class="calculator-header">
+                        <p class="section-tag">SOLAR SAVINGS ESTIMATOR</p>
+                        <h2>Calculate Your Savings</h2>
+                        <p>See your estimated system size, net cost, and annual savings by adjusting your parameters below.</p>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-label-row">
+                            <label for="monthlyBill" class="input-label">Monthly Electricity Bill</label>
+                            <span class="input-display" id="billDisplay">₹2,500</span>
+                        </div>
+                        <input type="range" id="monthlyBill" min="500" max="15000" step="100" value="2500" class="range-slider">
+                        <div class="range-labels">
+                            <span>₹500</span>
+                            <span>₹15,000+</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-label-row">
+                            <label for="systemSizeManual" class="input-label">System Size Override</label>
+                            <span class="input-display" id="sizeDisplay">3.0 kW</span>
+                        </div>
+                        <input type="range" id="systemSizeManual" min="1" max="10" step="0.5" value="3" class="range-slider">
+                        <div class="range-labels">
+                            <span>1 kW</span>
+                            <span>10 kW+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group-row">
+                        <div class="input-group small-input-group">
+                            <label for="propertyType" class="input-label">Property Type</label>
+                            <select id="propertyType" class="input-field">
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group small-input-group">
+                            <label for="stateSelector" class="input-label">Your State</label>
+                            <select id="stateSelector" class="input-field">
+                                <option value="default">Select State (Subsidy)</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="delhi">Delhi</option>
+                                <option option="gujarat">Gujarat</option>
+                                <option value="tamilnadu">Tamil Nadu</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button id="calculateBtn" class="cta-button calculate-button full-width-cta"><i class="fas fa-sync-alt"></i> UPDATE RESULTS</button>
+
+                </div>
+
+                <div class="results-output-column">
+                    
+                    <div class="result-card main-result-card animate-result-load">
+                        <div class="card-icon-wrapper"><i class="fas fa-hand-holding-usd result-icon-large"></i></div>
+                        <p class="result-label">Net Effective System Cost</p>
+                        <p class="result-value" id="netCost">₹99,000</p>
+                        <p class="note-text">After Central Subsidy and OneEnterprise Discounts</p>
+                    </div>
+
+                    <div class="secondary-results-grid">
+                        <div class="result-box secondary-bg animate-result-load" style="--animation-delay: 0.1s;">
+                            <i class="fas fa-solar-panel result-icon"></i>
+                            <p class="result-label">System Size (kW)</p>
+                            <h4 id="systemSizeOutput">3.0</h4>
+                        </div>
+
+                        <div class="result-box secondary-bg animate-result-load" style="--animation-delay: 0.2s;">
+                            <i class="fas fa-piggy-bank result-icon"></i>
+                            <p class="result-label">Annual Savings (₹)</p>
+                            <h4 id="annualSavingsOutput">30,000</h4>
+                        </div>
+
+                        <div class="result-box secondary-bg animate-result-load" style="--animation-delay: 0.3s;">
+                            <i class="fas fa-bolt result-icon"></i>
+                            <p class="result-label">Annual Generation (Units)</p>
+                            <h4 id="annualGenerationOutput">4,320</h4>
+                        </div>
+                        
+                        <div class="result-box secondary-bg animate-result-load" style="--animation-delay: 0.4s;">
+                            <i class="fas fa-ruler-combined result-icon"></i>
+                            <p class="result-label">Rooftop Space (Sqft)</p>
+                            <h4 id="spaceRequiredOutput">240</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="breakdown-cta-wrapper">
+                         <a href="#contact-us" class="breakdown-link">Get a Personalized, Detailed Quote <i class="fas fa-chevron-right"></i></a>
+                         <p class="taxes-note">*All cost estimates are subject to final site survey and applicable taxes.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="faq-section" class="faq-section">
+            <div class="faq-header animate-on-scroll">
+                <p class="section-tag">FREQUENTLY ASKED QUESTIONS</p>
             </div>
             
-            <div class="services-carousel-wrapper">
-                <div class="services-carousel" id="services-carousel">
-                    
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/17/17/21/91/240_F_1717219132_naaB7UdHScXdQBjI2C0Lh1b7W2uEBelU.jpg" alt="Hydropower Plants">
-                        </div>
-                        <div class="card-content">
-                            <h3>Hydropower Plants</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/13/88/83/17/240_F_1388831708_mIZGpJsZFyAlvDGyXao4nbDCbRgw3jkQ.jpg" alt="Fossil Resources">
-                        </div>
-                        <div class="card-content">
-                            <h3>Fossil Resources</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/05/70/48/81/240_F_570488137_bLf0IPeW5glyFUhdtoSCq7hwBYEIwB0s.jpg" alt="Solar Panel Installation">
-                        </div>
-                        <div class="card-content">
-                            <h3>Solar Panels Services</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t3.ftcdn.net/jpg/14/88/29/80/240_F_1488298072_x9ZwdXU8LipX312rMm0WiZZP61beEs63.jpg" alt="Wind Turbines">
-                        </div>
-                        <div class="card-content">
-                            <h3>Turbines Services</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/17/17/21/91/240_F_1717219132_naaB7UdHScXdQBjI2C0Lh1b7W2uEBelU.jpg" alt="Hydropower Plants">
-                        </div>
-                        <div class="card-content">
-                            <h3>Hydropower Plants (Duplicate)</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <div class="card-image-wrapper">
-                            <img src="https://t4.ftcdn.net/jpg/13/88/83/17/240_F_1388831708_mIZGpJsZFyAlvDGyXao4nbDCbRgw3jkQ.jpg" alt="Fossil Resources">
-                        </div>
-                        <div class="card-content">
-                            <h3>Fossil Resources (Duplicate)</h3>
-                            <p>The Capital Required To Establish And Scale-Up Wafer, Solar Cell And Solar Module Manufacturing</p>
-                            <a href="#" class="service-details-button service-link-block">SERVICE DETAILS <i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section class="pm-surya-ghar-section">
-            <div class="pm-surya-ghar-content">
-                <span class="section-tag" style="color: var(--primary-green);">ONE ENTERPRIZE ENERGY</span>
-                <h2>PM Surya Ghar: <br>Muft Bijli Yojana</h2>
-                <p>In order to further sustainable development and people’s well-being, we are launching the PM Surya Ghar: Muft Bijli Yojana. This project, with an investment of over Rs. 75,000 crores, aims to light up 1 crore households by providing up to 300 units of free electricity every month.</p>
-                <div class="pm-surya-ghar-buttons">
-                    <a href="#" class="cta-button">APPLY NOW</a>
-                    <a href="#" class="link-button-alt">DOWNLOAD BROCHURE</a>
-                </div>
-            </div>
-            <div class="pm-surya-ghar-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Sdcf3V0fZIQBtQ7wwXs7BO5VRDQesdhHkA&s" alt="PM Surya Ghar Muft Bijli Yojana advertisement">
-            </div>
-        </section>
-
-        <section class="faq-section">
             <div class="faq-container">
-                <span class="section-tag">ANSWERS TO YOUR QUESTIONS</span>
-                <h2>Popular Questions</h2>
                 
-                <div class="accordion-group" id="popular-questions">
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            How much can I save on my electricity bills with a solar system?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Savings vary based on system size, your household's energy consumption, and local electricity rates, but typically range from 50% to 90% reduction in monthly bills. We provide a detailed savings projection specific to your property.</p>
-                        </div>
+                <div class="faq-item animate-on-scroll" style="animation-delay: 0s;">
+                    <div class="faq-question">
+                        <span>How much can I save on my electricity bills with a solar system?</span>
+                        <i class="fas fa-plus toggle-icon"></i>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            What government subsidies and incentives are available?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>We facilitate all available central government schemes like the PM Surya Ghar Muft Bijli Yojana, which offers significant subsidies up to 60% depending on the system size (e.g., up to 3kW). State-specific incentives and net-metering benefits are also managed by our team.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            What is the typical payback period for a rooftop solar installation?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>The return on investment (ROI) or payback period is generally 3 to 5 years, after accounting for subsidies and monthly savings. After this period, the electricity generated is essentially free for the remainder of the system's 25-year lifespan.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            How long does the installation process take?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Once permits and financing are secured, the physical installation typically takes only 1-3 days for a standard residential rooftop system. The full process from initial consultation to power-on (including approvals) usually spans 4-8 weeks.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            What maintenance is required after installation?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Solar systems require minimal maintenance, mainly cleaning the panels a few times a year. Our service includes 24x7 remote monitoring via an IoT dashboard and optional Annual Maintenance Contracts (AMCs) for worry-free operation.</p>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Savings vary significantly based on your current usage, system size, and local utility rates, but most homeowners save between **50% and 100%** on their monthly electricity bills. We provide a personalized savings projection during your consultation.</p>
                     </div>
                 </div>
 
-                <h2>General Questions</h2>
-
-                <div class="accordion-group" id="general-questions">
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            Which brands of panels and inverters do you use?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>We partner only with tier-1, government-approved manufacturers like Adani, Waaree, and Trina Solar for panels, and trusted brands like SolarEdge and Growatt for inverters, ensuring high quality and warranty coverage.</p>
-                        </div>
+                <div class="faq-item animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="faq-question">
+                        <span>What government subsidies and incentives are available?</span>
+                        <i class="fas fa-plus toggle-icon"></i>
                     </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            2. What fees do you charge?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Our quotes are comprehensive and cover all equipment, installation, and commissioning fees. We offer transparent financing options, including zero-cost EMIs, with no hidden charges.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            3. How can I start accepting business?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>This question appears to be for a different business type. If you meant, "How can I start the process of getting solar?", simply click the 'GET A QUOTE' button or fill out the contact form below, and we'll schedule a free site consultation.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            4. Which products are excluded from the returns policy?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>As solar systems are custom-designed for each site, standard "returns" are not applicable. However, all components are covered by extensive manufacturer warranties (up to 25 years for panels), which we help manage.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            5. Holistically predominate extensible testing reliable?
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        <div class="accordion-content">
-                            <p>We ensure the reliability of your system through rigorous, holistic testing and predictive maintenance, leveraging extensible IoT technology to guarantee maximum performance and reliability over the system's lifetime.</p>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Homeowners often qualify for the **Federal Solar Investment Tax Credit (ITC)**, which can cover a significant portion of the installation cost. Local and state rebates may also be available, and our team will help you maximize every incentive.</p>
                     </div>
                 </div>
 
+                <div class="faq-item animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="faq-question">
+                        <span>What is the typical payback period for a rooftop solar installation?</span>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The average payback period for a modern solar installation ranges from **6 to 9 years**, after which your electricity generation is essentially free for the remainder of the system's 25+ year lifespan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="faq-question">
+                        <span>How long does the installation process take?</span>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Physical installation usually takes **1 to 3 days**. However, the entire process, including site assessment, design, permitting, and final utility approval, can take **4 to 8 weeks** depending on local regulations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="faq-question">
+                        <span>What maintenance is required after installation?</span>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Modern solar systems require very little maintenance. We recommend occasional cleaning (especially in dusty areas) and an annual professional inspection, which can be covered by our maintenance service packages.</p>
+                    </div>
+                </div>
             </div>
         </section>
-
-
-        <section class="contact-section" id="contact-us">
-            <div class="contact-container">
-                
-                <div class="contact-info-column">
-                    <span class="section-tag" style="color: var(--primary-green);">CONTACT US</span>
-                    <h2>Ready to Go Solar? Get in Touch!</h2>
-                    <p>We are dedicated to providing the best renewable energy solutions. Fill out the form or use the contact details to reach our expert team.</p>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Green Energy Blvd, Hyderabad, Telangana, 500034</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@oneenterprize.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+91 98765 43210</p>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+        <section id="contact-us" class="contact-form-section">
+            <div class="contact-content-wrapper">
+                <div class="contact-text-column animate-on-scroll slide-in-left">
+                    <p class="section-tag">GET IN TOUCH WITH ONEENTERPRISE</p>
+                    <h2>Ready to Power Your Future?</h2>
+                    <p>Contact us today for a free consultation and estimate. Our experts will help you find the perfect solar solution tailored to your home or business needs.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone-alt"></i> +1 800 987 654</p>
+                        <p><i class="fas fa-envelope"></i> support@oneenterprise.com</p>
                     </div>
                 </div>
-
-                <div class="contact-form-column">
-                    <h3>Request a Free Quote</h3>
+                
+                <div class="contact-form-column animate-on-scroll slide-in-right">
                     <form action="#" method="POST" class="contact-form">
-                        <input type="text" name="name" placeholder="Your Full Name" required>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Phone Number">
                         <select name="service" required>
                             <option value="" disabled selected>Select Service of Interest</option>
-                            <option value="residential">Residential Solar</option>
-                            <option value="commercial">Commercial Solar</option>
-                            <option value="industrial">Industrial Projects</option>
-                            <option value="other">General Inquiry</option>
+                            <option value="installation">Solar Installation</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="battery">Battery Storage</option>
+                            <option value="other">Other</option>
                         </select>
-                        <textarea name="message" rows="4" placeholder="Your Message / Project Details" required></textarea>
-                        <button type="submit" class="cta-button">SUBMIT REQUEST</button>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">SEND MESSAGE</button>
                     </form>
                 </div>
-
             </div>
         </section>
-
-    </div> 
+        </div>
+    
+    
     <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <img src="./Assests/Images/OneEnterprises-removebg-preview.png" alt="OneEnterprize Logo Footer" class="footer-logo">
-                <p>Driving the transition to sustainable, reliable, and affordable energy systems. We build a brighter future for all.</p>
+        <div class="footer-grid">
+            <div class="footer-col about-col">
+                <img src="./Assests/Images/OneEnterprises-removebg-preview.png" alt="OneEnterprize Logo" class="footer-logo">
+                <p>Driving the transition to sustainable, reliable, and affordable energy systems. We power your future today.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            
-            <div class="footer-links">
-                <h3>Quick Links</h3>
+
+            <div class="footer-col links-col">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#services">Our Services</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#solar-calculator-section">Calculator</a></li>
+                    <li><a href="#faq-section">FAQ</a></li>
                     <li><a href="#contact-us">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-contact-info">
-                <h3>Get In Touch</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</p>
-                <p><i class="fas fa-envelope"></i> info@oneenterprize.com</p>
-                <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+
+            <div class="footer-col services-col">
+                <h4>Services</h4>
+                <ul>
+                    <li>Solar Installation</li>
+                    <li>System Maintenance</li>
+                    <li>Battery Storage</li>
+                    <li>Custom Design</li>
+                    <li>System Upgrades</li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Green Energy Way, Solar City, CA 90210</p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+1800987654" style="color:inherit; text-decoration:none;">+1 800 987 654</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@oneenterprise.com" style="color:inherit; text-decoration:none;">info@oneenterprise.com</a></p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>&copy; 2024 OneEnterprize. All Rights Reserved. | Designed by [Your Name]</p>
+            <p>&copy; 2025 **OneEnterprise**. All Rights Reserved.</p>
         </div>
     </footer>
-    
-    
-    <script src="./Assests/js/javascript.js"></script>
+
+    <script src="Assests/js/javascript.js"></script>
 </body>
 </html>
